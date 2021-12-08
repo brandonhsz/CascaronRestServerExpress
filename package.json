@@ -2,17 +2,28 @@
   "name": "07-restserver",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.ts",
   "scripts": {
-    "dev": "nodemon app",
-    "start": "node app"
+    "dev": "nodemon ./src/app.ts",
+    "start": "node app",
+    "build" : "tsc --project ./"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/morgan": "^1.9.3",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.12",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
   }
 }
